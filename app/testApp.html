@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<title>
+		Mapped: The Mill House
+	</title>
+</head>
+<style type="text/css">
+	body {
+		font-family: 'Noto Serif', serif;
+	}
+	h1 {
+		text-align: center;
+		margin: auto;
+		border: solid #30343f;
+		padding: 5px;
+		background-color: #c1dff0; 
+	}
+/*navBarStyling http://www.w3schools.com/css/css_navbar.asp*/
+	div.navBar {
+		font-size: 150%;
+	}
+	ul {
+    	list-style-type: none;
+    	text-align: center;
+    	padding: 1px;
+    	width: 100px;
+    	border: solid #30343f;
+    	background-color: #C1DFF0;
+    	height: 100%; /* Full height */
+    	position: fixed; /* Make it stick, even on scroll */
+    	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+	} 
+
+	li a {
+    	display: block;
+    	text-align: center;
+    	border-bottom: solid #30343f;
+	}
+	li a:hover {
+    	background-color: #457b9d;
+    	color: white;
+	}
+	li:last-child {
+    	border-bottom: none;
+	}
+	.active {
+    	background-color: #457b9d;
+    	color: white;
+	}
+/*end navBarStyling http://www.w3schools.com/css/css_navbar.asp*/	
+/*imgGalleryStyling http://www.w3schools.com/css/css_image_gallery.asp*/
+	div.img {
+    	margin: 5px;
+    	border: 1px solid #ccc;
+    	float: left;
+    	width: 180px;
+	}
+
+	div.img:hover {
+    	border: 1px solid #777;
+	}
+
+	div.img img {
+ 	   width: 100%;
+ 	   height: auto;
+	}
+
+	div.desc {
+    	padding: 15px;
+    	text-align: center;
+	}
+	div.gallery {
+		margin-left: 105px;
+	}
+/*end imgGalleryStyling http://www.w3schools.com/css/css_image_gallery.asp*/
+	div.iFrame1 {
+		margin-left: 100px;
+		text-align: center;
+	} /*https://codepen.io/hubpork/pen/xriIz*/
+
+</style>
+<body>
+	<div id="home">
+		<h1>Mapped: The Mill House</h1>
+	</div>
+	<div class="navBar">
+		<nav><!--http://www.w3schools.com/css/css_navbar.asp-->
+			<ul>
+				<li><a href="#home">Home</li>
+				<li><a href="#map">Map</a></li>
+				<li><a href="#imgGallery">Gallery</a></li>
+				<li><a href="">Search</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="iFrame1" id="map"><!--https://developers.google.com/maps/documentation/embed/guide#optional_parameters !!!makeResponsive!!!-->
+		<iframe
+  			width="800"
+  			height="450"
+  			frameborder="0" style="border:0"
+  			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMpTC7_iguRmqXaiYuuimyfPElC4PgSOE
+    		&q=Włosień,+Poland" allowfullscreen>
+		</iframe>
+	</div>
+	<div class = "gallery" id="imgGallery"><!--http://www.w3schools.com/css/css_image_gallery.asp-->
+		<div class="img">
+  			<a target="_blank" href="https://lh6.googleusercontent.com/BCMnPZHFYAgVKMNSlcSZuUKmWRudNMzh8-3uZu-EYb4HbbxfB5WZtG1P2qO5A2ZhhRP66tVcOK-i2k0=w1920-h966-rw"><!--target = "_blank" = where to open. opens in a new window 
+  			http://www.w3schools.com/tags/att_a_target.asp !!!!lets make it open in an overlay!!!!! http://www.w3schools.com/howto/howto_css_modals.asp-->
+    		<img src="https://lh6.googleusercontent.com/BCMnPZHFYAgVKMNSlcSZuUKmWRudNMzh8-3uZu-EYb4HbbxfB5WZtG1P2qO5A2ZhhRP66tVcOK-i2k0=w1920-h966-rw" alt="Campanula Patula" width="300" height="200"></a>
+  			<div class="desc">Campanula Patula</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh3.googleusercontent.com/QRKvwInlGBr9JR4V3-AXIe-SUQ4ufbAm6FcsZUSb3um-GLZuNoDFM5ll0Ja5jfgulx-mq5-zV0IiPvc=w1757-h946-rw">
+    		<img src="https://lh3.googleusercontent.com/QRKvwInlGBr9JR4V3-AXIe-SUQ4ufbAm6FcsZUSb3um-GLZuNoDFM5ll0Ja5jfgulx-mq5-zV0IiPvc=w1757-h946-rw" alt="Campanula Rotundi Folia" width="300" height="200"></a>
+  			<div class="desc">Campanula Rotundi Folia</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh5.googleusercontent.com/JYcpg762BXtKVDQDIIplqmey_HvB76hoJbV0YN6t9_CwokosPKVI83aX1x0-AfERN2YmPR744zriyIQ=w1757-h946-rw">
+    		<img src="https://lh5.googleusercontent.com/JYcpg762BXtKVDQDIIplqmey_HvB76hoJbV0YN6t9_CwokosPKVI83aX1x0-AfERN2YmPR744zriyIQ=w1757-h946-rw" alt="Centuria Nigra" width="300" height="200"></a>
+  			<div class="desc">Centuria Nigra</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh5.googleusercontent.com/tvcVeZtRRmS-RS2DH9p895MmE4_aFWFXcG9duJ27eHXZrfZlZGP8A2VXssC3LuYydVkqkftFPfobn1Y=w1757-h946-rw">
+    		<img src="https://lh5.googleusercontent.com/tvcVeZtRRmS-RS2DH9p895MmE4_aFWFXcG9duJ27eHXZrfZlZGP8A2VXssC3LuYydVkqkftFPfobn1Y=w1757-h946-rw" alt="Galinsoga Parviflora" width="300" height="200"></a>
+  			<div class="desc">Galinsoga Parviflora</div>
+  		</div>
+  				<div class="img">
+  			<a target="_blank" href="https://lh3.googleusercontent.com/cNW3WET6IepmhTqrRx-u2ge_6_Fy8_MI0WdRGYxZ8ylSmiV_WwfCKYmQAVJ67FUOh7dz28lYQrsC8Ng=w1757-h946-rw">
+    		<img src="https://lh3.googleusercontent.com/cNW3WET6IepmhTqrRx-u2ge_6_Fy8_MI0WdRGYxZ8ylSmiV_WwfCKYmQAVJ67FUOh7dz28lYQrsC8Ng=w1757-h946-rw" alt="Graphosoma Italicum" width="300" height="200"></a>
+  			<div class="desc">Graphosoma Italicum</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh4.googleusercontent.com/oOeugEcIXTZYtxrQz6Y0PyQALMKbA7J7puy3bmSC7S4yxWnaOsDiE5fDpmEOIpVlFVQVKAC3NXf3gWE=w1855-h966-rw">
+    		<img src="https://lh4.googleusercontent.com/oOeugEcIXTZYtxrQz6Y0PyQALMKbA7J7puy3bmSC7S4yxWnaOsDiE5fDpmEOIpVlFVQVKAC3NXf3gWE=w1855-h966-rw" alt="Graphosoma Italicum" width="300" height="200"></a>
+  			<div class="desc">Graphosoma Italicum</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh6.googleusercontent.com/p6opo9groB7G5xWgt8uNNe4BsHh9XZjUNXMyqVh-wiV9UElUPKyG0G3jPBYyyzfqILUzfIgKCOvYjBo=w1855-h966-rw">
+    		<img src="https://lh6.googleusercontent.com/p6opo9groB7G5xWgt8uNNe4BsHh9XZjUNXMyqVh-wiV9UElUPKyG0G3jPBYyyzfqILUzfIgKCOvYjBo=w1855-h966-rw" alt="Mushrooms" width="300" height="200"></a>
+  			<div class="desc">Mushrooms</div>
+  		</div>
+  				<div class="img">
+  			<a target="_blank" href="https://lh3.googleusercontent.com/AcLhDo4V6fXM68fgXXlp3JEcIqwSTwcOwjAVMjwbQVOusKdlbQ7zy_VaWnB62VhJMU5MQklxXak2w6k=w1855-h966-rw">
+    		<img src="https://lh3.googleusercontent.com/AcLhDo4V6fXM68fgXXlp3JEcIqwSTwcOwjAVMjwbQVOusKdlbQ7zy_VaWnB62VhJMU5MQklxXak2w6k=w1855-h966-rw" alt="Mushrooms" width="300" height="200"></a>
+  			<div class="desc">Mushrooms</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh4.googleusercontent.com/WuSwcOVJxOUuOgaGVZZDw8vPdwrMMzj-w6QC0sKiTv4jVBfyu_gsX7MuADB7AQ86EIlN2KNIOAVdMv0=w1855-h966-rw">
+    		<img src="https://lh4.googleusercontent.com/WuSwcOVJxOUuOgaGVZZDw8vPdwrMMzj-w6QC0sKiTv4jVBfyu_gsX7MuADB7AQ86EIlN2KNIOAVdMv0=w1855-h966-rw" alt="Impatiens Parviflora" width="300" height="200"></a>
+  			<div class="desc">Impatiens Parviflora</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh3.googleusercontent.com/atQOoZuoMirDmz8-zrCUghVqVk-L9yM5OdTpVQvWcfvIL5jOfrj82PKH05GuIuXUiCqqnZ7NTM4sxos=w1855-h966-rw">
+    		<img src="https://lh3.googleusercontent.com/atQOoZuoMirDmz8-zrCUghVqVk-L9yM5OdTpVQvWcfvIL5jOfrj82PKH05GuIuXUiCqqnZ7NTM4sxos=w1855-h966-rw" alt="Matricaria Camomilla" width="300" height="200"></a>
+  			<div class="desc">Matricaria Camomilla</div>
+  		</div>
+  				<div class="img">
+  			<a target="_blank" href="https://lh6.googleusercontent.com/XeMeMyBsA00jjAJtJdAgykGdt4C59tihH36RJaFtdciftumgoDBwP-Ir5kczVrXynNxaAYLLY0mFKKI=w1855-h966-rw">
+    		<img src="https://lh6.googleusercontent.com/XeMeMyBsA00jjAJtJdAgykGdt4C59tihH36RJaFtdciftumgoDBwP-Ir5kczVrXynNxaAYLLY0mFKKI=w1855-h966-rw" alt="Potentilla Anserina" width="300" height="200"></a>
+  			<div class="desc">Potentilla Anserina</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh3.googleusercontent.com/hECPzm8AbaY6mUnQ3xTMvhiIcv2GWxs_Q9y1LJLdLh8J0DXoI3QRNSPPR92OT_Bsdkpl_i5I7S7lLzI=w1855-h966-rw">
+    		<img src="https://lh3.googleusercontent.com/hECPzm8AbaY6mUnQ3xTMvhiIcv2GWxs_Q9y1LJLdLh8J0DXoI3QRNSPPR92OT_Bsdkpl_i5I7S7lLzI=w1855-h966-rw" alt="Trifolium Medium" width="300" height="200"></a>
+  			<div class="desc">Trifolium Medium</div>
+		</div>
+
+		<div class="img">
+  			<a target="_blank" href="https://lh6.googleusercontent.com/e5HjMakGZuc2dzNQT5qOFFxeMWesc2R833qYl0bvIYA_r9-Eur_QJUrHmOp64HfJwUmtHRR7dvVCTmI=w1855-h966-rw">
+    		<img src="https://lh6.googleusercontent.com/e5HjMakGZuc2dzNQT5qOFFxeMWesc2R833qYl0bvIYA_r9-Eur_QJUrHmOp64HfJwUmtHRR7dvVCTmI=w1855-h966-rw" alt="Verbascum Thapsus" width="300" height="200"></a>
+  			<div class="desc">Verbascum Thapsus</div>
+  		</div>
+	</div>
+</body>
+</html>
